@@ -1,0 +1,382 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg"
+  xml:space="preserve">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a4ff7d"/>
+      <stop offset="50%" stop-color="#5e15e4"/>
+      <stop offset="100%" stop-color="#0b0be4"/>
+    </linearGradient>
+    <filter id="blob" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="55"/>
+    </filter>
+    <filter id="winShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+  <style>
+    @keyframes drift { 0%,100% { transform: translate(0,0); } 50% { transform: translate(14px,-10px); } }
+    .blob1 { animation: drift 9s ease-in-out infinite; }
+    .blob2 { animation: drift 11s ease-in-out infinite reverse; }
+    .blob3 { animation: drift 13s ease-in-out infinite; }
+    @keyframes typeCmd {
+      0%   { width: 0; }
+      20%  { width: 230px; }
+      100%  { width: 230px; }
+    }
+
+    @keyframes reveals {
+      0%, 37%   { opacity: 0; }
+      38%, 60%       { opacity: 0.9; }
+      61%, 100%       { opacity: 1; }
+    }
+    @keyframes reinitFlicker {
+      0% { opacity: 0; }
+      100%{ opacity: 1; }
+    }
+    .reinit-widget { animation: reinitFlicker 1.2s steps(1) 0.3s forwards; opacity: 0; }
+
+    .prompt2 { animation: reinitFlicker 0.5s steps(1) 1s forwards; opacity: 0; }
+
+        @keyframes typeEraseA {
+      0%      { width: 0; }
+      5%      { width: 290px; }   /* echo "Welcome Visitor!!" typed */
+      30%     { width: 290px; }   /* hold */
+      33.3%   { width: 0; }       /* erased right as B begins */
+      100%    { width: 0; }
+    }
+        @keyframes typeEraseB {
+      0%, 33.3% { width: 0; }
+      38%       { width: 290px; }  /* cat currently-building.txt typed */
+      63%       { width: 290px; }  /* hold */
+      66.6%     { width: 0; }      /* erased right as C begins */
+      100%      { width: 0; }
+    }
+      @keyframes typeEraseC {
+      0%, 66.6% { width: 0; }
+      71%       { width: 290px; }  /* checkout my-work👇🏻 typed */
+      96%       { width: 290px; }  /* hold */
+      100%      { width: 0; }      /* erased right as A begins again */
+    }
+
+    .cmdA-clip { animation: typeEraseA 9s steps(20) 3s infinite; }
+    .cmdB-clip { animation: typeEraseB 9s steps(20) 3s infinite; }
+    .cmdC-clip { animation: typeEraseC 9s steps(20) 3s infinite; }
+    .type-clip  { animation: typeCmd 4s steps(18) forwards; }
+    .ls-reveal  { animation: reveals 0.8s ease-in-out 1.2s forwards; opacity:0;}
+  </style>
+  <!-- Wallpaper backdrop -->
+  <rect width="1200" height="1200" fill="#13131a"/>
+  <circle class="blob1" cx="130" cy="120" r="150" fill="#ffffff" filter="url(#blob)" opacity="0.4"/>
+  <circle class="blob2" cx="1080" cy="140" r="170" fill="#ffffff" filter="url(#blob)" opacity="0.38"/>
+  <circle class="blob3" cx="620" cy="660" r="190" fill="#ffffff" filter="url(#blob)" opacity="0.28"/>
+  <circle cx="160" cy="600" r="140" fill="#7dcfff" filter="url(#blob)" opacity="0.25"/>
+  <!-- Terminal window (frosted glass) -->
+  <g filter="url(#winShadow)">
+    <rect x="40" y="40" width="1120" height="1120" rx="18" fill="#1a1b26" fill-opacity="0.22" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+    <path d="M 58 41 H 1142" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+  </g>
+  <!-- Titlebar -->
+  <text x="600" y="67" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="14" fill="#7aa2f7" letter-spacing="0.5">ghostty  ·  samriddha@kathmandu: ~</text>
+  <!-- Command line -->
+  <text x="70" y="126" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="16">
+    <tspan fill="#9ece6a">❯</tspan>
+    <tspan dx="10" fill="#c0caf5">fastfetch</tspan>
+  </text>
+  <!-- ASCII art (fastfetch style) -->
+  <g transform="translate(0,-39.75) scale(1.10,1.35)">
+    <g font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="9" font-weight="700" xml:space="preserve">
+      <text x="13" y="159" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="169" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="179" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="189" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡿⠇⠀⠀⠀⠀⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="199" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠀⠀⡸⣞⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="209" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⢀⣧⢿⣽⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="219" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢴⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣼⣞⡿⣞⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="229" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⠀⣰⣟⢾⣽⢫⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="239" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣠⢤⣶⡻⣞⣿⣺⢯⣽⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="249" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⢠⣄⡀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⣀⣠⣤⣿⣽⣻⢾⣽⣷⣾⣽⣻⣞⣷⣳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="259" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣶⣄⡀⠀⠀⠀⣉⣲⣴⢶⣞⡿⣽⣞⡷⣯⢿⡽⣞⣿⠟⠋⠁⠉⠈⠳⣟⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="269" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⢶⣾⣿⡽⣯⣟⡾⣽⡷⣯⣟⡽⡾⣽⡯⠁⠀⠀⠀⠀⠀⠀⢮⣭⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="279" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢞⣿⣿⢯⡿⣿⣯⣟⣷⣯⢿⣳⣟⡷⣽⣼⣻⣽⠀⠀⠀⠀⠀⠀⠀⢀⣼⡯⡗⠋⠤⠀⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="289" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢾⣿⣿⣯⣽⣾⣿⣾⣗⡿⣯⡷⣯⣟⡷⣞⣼⣿⣀⠀⠀⠀⠀⢀⣠⡿⣏⡗⠈⠐⠈⠅⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="299" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠛⠏⠉⠉⠽⢟⢿⣿⣿⣿⣿⣷⣻⢾⡽⣞⡷⠄⡹⣶⢿⣻⢿⣻⡽⢯⣼⢦⠶⠁⠈⠀⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="309" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣯⠇⠀⠀⠀⠀⠀⠁⣽⣿⣿⣿⣷⣯⣿⣽⣛⡦⠀⠀⢩⣿⣹⢯⣷⢻⣟⠺⢣⡖⣘⠤⠓⠀⠀⠀⠀⠀⠀</text>
+      <text x="13" y="319" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣿⡃⠁⠀⠀⠀⢀⣤⣾⣟⢿⣻⣿⣿⣟⡾⣽⡳⠄⠎⢳⣯⢯⣟⡾⢯⣞⣯⣓⠉⢀⠀⠀⡄⢢⡀⠀⠀⠀</text>
+      <text x="13" y="329" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣷⣷⣶⣳⣶⣺⣿⣿⣳⢯⣟⣿⣿⣳⢯⠛⠅⠃⠀⠀⣴⣿⡿⣬⢶⠾⠙⣊⣥⠾⡒⠊⢁⢠⠣⣌⠀⠀⠀</text>
+      <text x="13" y="339" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⡽⣾⡽⣯⣟⣿⡿⣯⣿⣿⣾⢿⣿⠳⢏⣈⢠⠀⠀⣰⢿⡿⣽⣉⡶⠌⠋⠉⣀⡀⠁⠀⠀⠀⣘⡐⣂⠀⠀</text>
+      <text x="13" y="349" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣽⣳⣟⣳⣟⣾⣽⣿⣿⣿⣿⣿⣦⣜⡻⡽⠆⠧⣴⡟⣯⢟⡳⣭⠲⠄⠐⠀⠀⠀⠈⠁⠉⠑⢊⡕⢃⠄⠀</text>
+      <text x="13" y="359" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣾⣿⣯⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣾⢧⠀⠹⠾⡵⡞⡽⢢⣃⠐⠀⠀⠄⡐⠀⠀⠀⡘⢦⠘⣌⠀⠀</text>
+      <text x="13" y="369" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠹⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠒⡈⠀⡀⠄⡑⠢⣉⠴⣈⣆</text>
+      <text x="13" y="379" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⣏⡴⣶⣵⣢⢤⢠⡀⡄⢠⠐⡰⢌⡱⠀⡁⡀⠆⡥⠆⡥⣛⡽⣾</text>
+      <text x="13" y="389" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠔⠉⠀⠀⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣻⢷⣯⡽⣞⣷⣻⡼⣡⢋⡔⠣⠜⡐⢐⠠⡓⣤⣙⣲⣽⣻</text>
+      <text x="13" y="399" fill="#ffffff">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡿⣽ ⣷⣻⡴⣣⢜⡱⣊⡕⣊⠠⡙⡰⣭⢷.:</text>
+    </g>
+  </g>
+  <!-- System info (fastfetch style) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="19">
+    <text x="430" y="165">
+      <tspan fill="#ffffff" font-weight="800">OS</tspan>
+      <tspan x="575" fill="#c0caf5">Fedora Linux x86_64</tspan>
+    </text>
+    <text x="430" y="189">
+      <tspan fill="#ffffff" font-weight="800">Host</tspan>
+      <tspan x="575" fill="#c0caf5">Samriddha's Workstation</tspan>
+    </text>
+    <text x="430" y="213">
+      <tspan fill="#ffffff" font-weight="800">Kernel</tspan>
+      <tspan x="575" fill="#c0caf5">Linux 7.2.6-200.fc44.x86_64</tspan>
+    </text>
+    <text x="430" y="237">
+      <tspan fill="#ffffff" font-weight="800">Uptime</tspan>
+      <tspan x="575" fill="#c0caf5">4 years, on-the-grind since 2023</tspan>
+    </text>
+    <text x="430" y="261">
+      <tspan fill="#ffffff" font-weight="800">Packages</tspan>
+      <tspan x="575" fill="#c0caf5">React · NestJS · Expo </tspan>
+    </text>
+    <text x="430" y="285">
+      <tspan fill="#ffffff" font-weight="800">Shell</tspan>
+      <tspan x="575" fill="#c0caf5">zsh 5.9</tspan>
+    </text>
+    <text x="430" y="309">
+      <tspan fill="#ffffff" font-weight="800">WM</tspan>
+      <tspan x="575" fill="#c0caf5">niri 26.04</tspan>
+    </text>
+    <text x="430" y="333">
+      <tspan fill="#ffffff" font-weight="800">Terminal</tspan>
+      <tspan x="575" fill="#c0caf5">ghostty</tspan>
+    </text>
+    <text x="430" y="357">
+      <tspan fill="#ffffff" font-weight="800">CPU</tspan>
+      <tspan x="575" fill="#c0caf5">Developing &amp; Delivering</tspan>
+    </text>
+    <text x="430" y="381">
+      <tspan fill="#ffffff" font-weight="800">GPU</tspan>
+      <tspan x="575" fill="#c0caf5">TypeScript </tspan>
+    </text>
+    <text x="430" y="405">
+      <tspan fill="#ffffff" font-weight="800">Memory</tspan>
+      <tspan x="575" fill="#c0caf5">Always allocating for a cup of coffee</tspan>
+    </text>
+    <text x="430" y="429">
+      <tspan fill="#ffffff" font-weight="800">Storage</tspan>
+      <tspan x="575" fill="#c0caf5">Brain full of thoughts</tspan>
+    </text>
+    <text x="430" y="453">
+      <tspan fill="#ffffff" font-weight="800">Locale</tspan>
+      <tspan x="575" fill="#c0caf5">ne_NP.UTF-8</tspan>
+    </text>
+    <text x="430" y="477">
+      <tspan fill="#ffffff" font-weight="800">Status</tspan>
+      <tspan x="575" fill="#c0caf5">On the grind</tspan>
+    </text>
+  </g>
+  <!-- Colour palette swatches -->
+  <g>
+    <rect x="430" y="490" width="25" height="25" fill="#1a1b26"/>
+    <rect x="454" y="490" width="25" height="25" fill="#FF7272"/>
+    <rect x="478" y="490" width="25" height="25" fill="#9BFF7F"/>
+    <rect x="502" y="490" width="25" height="25" fill="#FFE372"/>
+    <rect x="526" y="490" width="25" height="25" fill="#F2F2F2"/>
+    <rect x="550" y="490" width="25" height="25" fill="#D4D4D4"/>
+    <rect x="574" y="490" width="25" height="25" fill="#FFFFFF"/>
+    <rect x="598" y="490" width="25" height="25" fill="#FFEFEF"/>
+    <rect x="430" y="514" width="25" height="25" fill="#414868"/>
+    <rect x="454" y="514" width="25" height="25" fill="#FF9F9F"/>
+    <rect x="478" y="514" width="25" height="25" fill="#B9FFA5"/>
+    <rect x="502" y="514" width="25" height="25" fill="#FFEDA5"/>
+    <rect x="526" y="514" width="25" height="25" fill="#FFFFFF"/>
+    <rect x="550" y="514" width="25" height="25" fill="#FFFFFF"/>
+    <rect x="574" y="514" width="25" height="25" fill="#FFFFFF"/>
+    <rect x="598" y="514" width="25" height="25" fill="#FFF8F8"/>
+  </g>
+  <g transform="translate(70,565)">
+    <path d="M0,0 H213 A17,17 0 0 1 213,34 H0 Z" fill="#090C0C"/>
+    <rect width="20" height="34" fill="#363A46"/>
+    <rect x= "20" width="20" height="34" fill="#A3AED2"/>
+    <g transform="translate(39,0)">
+      <path d="M0,0 H87 A17,17 0 0 1 87,34 H0 Z" fill="#394260"/>
+    </g>
+    <g transform="translate(38,0)">
+      <path d="M0,0 H70 A17,17 0 0 1 70,34 H0 Z" fill="#769FF0"/>
+    </g>
+    <g transform="translate(45,5) scale(1.01)">
+      <circle cx="11" cy="14" fill="#ffffff" r="10"/>
+      <path fill="#000000" d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z"/>
+    </g>
+    <text x="80" y="28" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="30" fill="#c0caf5">~</text>
+    <!-- clock -->
+    <circle cx="158" cy="17" r="9" fill="none" stroke="#8b8fa3" stroke-width="1.6"/>
+    <path d="M158 12 V17 L162 19" stroke="#8b8fa3" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="174" y="22" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="14" fill="#c0caf5">11:43</text>
+  </g>
+  <text x="70" y="620" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="17">
+    <tspan fill="#9ece6a" font-weight="700">❯</tspan>
+  </text>
+  <clipPath id="cmdClip">
+    <rect class="type-clip" x="60" y="605" width="0" height="25"/>
+  </clipPath>
+  <g clip-path="url(#cmdClip)">
+    <text x="80" y="620" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="17">
+      <tspan dx="10" fill="#c0caf5">ls -la /my-profile</tspan>
+    </text>
+  </g>
+  <g class="ls-reveal" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="17">
+    <text x="70" y="642" fill="#8b8fa3">total 48</text>
+    <text x="70" y="668">
+      <tspan fill="#7aa2f7" font-weight="700">drwxr-xr-x</tspan>
+      <tspan x="230" fill="#c0caf5">4.0K</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:43</tspan>
+      <tspan x="440" fill="#7aa2f7" font-weight="700">.</tspan>
+    </text>
+    <text x="70" y="694">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5">14B</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">pronouns</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">chill/guy</tspan>
+    </text>
+    <text x="70" y="720">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5">10B</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">location</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">NP🇳🇵</tspan>
+    </text>
+    <text x="70" y="746">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5">21B</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">role</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">Software Engineer</tspan>
+    </text>
+    <text x="70" y="772">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5">23B</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">status</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">open to work</tspan>
+    </text>
+    <text x="70" y="798">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5">34B</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">languages</tspan>
+      <tspan fill="#565f89">=</tspan>
+    </text>
+    <!-- Language icon badges: 26x26, evenly spaced, text centered -->
+    <g transform="translate(555,782)" font-family="'JetBrains Mono','Fira Code',Consolas,monospace">
+      <rect x="0" y="0" width="26" height="26" rx="5" fill="#3178C6"/>
+      <text x="13" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#000000">TS</text>
+      <rect x="32" y="0" width="26" height="26" rx="5" fill="#00ADD8"/>
+      <text x="45" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#000000">GO</text>
+      <rect x="64" y="0" width="26" height="26" rx="5" fill="#3776AB"/>
+      <text x="77" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#000000">PY</text>
+    </g>
+    <text x="106" y="850">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5">28B</tspan>
+      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan x="476" fill="#bb9af7">frontend</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">React Native,React,NextJS</tspan>
+    </text>
+    <text x="106" y="900">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5">14B</tspan>
+      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan x="476" fill="#bb9af7">backend</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">node,nest,go</tspan>
+    </text>
+    <text x="106" y="926">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5">16B</tspan>
+      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan x="476" fill="#bb9af7">database</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">postgres,mongo,redis</tspan>
+    </text>
+    <text x="106" y="952">
+      <tspan fill="#c0caf5">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5">17B</tspan>
+      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan x="476" fill="#bb9af7">tools</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">docker,git</tspan>
+    </text>
+    <text x="70" y="978">
+      <tspan fill="#9ece6a" font-weight="700">-rwxr-xr-x</tspan>
+      <tspan x="230" fill="#c0caf5">44B</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">focus</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">performant-web-ux.sh</tspan>
+    </text>
+    <text x="70" y="1004">
+      <tspan fill="#9ece6a" font-weight="700">-rwxr-xr-x</tspan>
+      <tspan x="230" fill="#c0caf5">1MB</tspan>
+      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan x="440" fill="#bb9af7">quote</tspan>
+      <tspan fill="#565f89">=</tspan>
+      <tspan fill="#9ece6a">dark theme is the only theme</tspan>
+    </text>
+  </g>
+  <!-- Reinitialized terminal widget, appears once after first output -->
+  <g class="reinit-widget" transform="translate(70,1040)">
+    <path d="M0,0 H213 A17,17 0 0 1 213,34 H0 Z" fill="#090C0C"/>
+    <rect width="20" height="34" fill="#363A46"/>
+    <rect x="20" width="20" height="34" fill="#A3AED2"/>
+    <g transform="translate(39,0)">
+      <path d="M0,0 H87 A17,17 0 0 1 87,34 H0 Z" fill="#394260"/>
+    </g>
+    <g transform="translate(38,0)">
+      <path d="M0,0 H70 A17,17 0 0 1 70,34 H0 Z" fill="#769FF0"/>
+    </g>
+    <g transform="translate(45,5) scale(1.01)">
+      <circle cx="11" cy="14" fill="#ffffff" r="10"/>
+      <path fill="#000000" d="M12.001 0C5.376 0 .008 5.369.004 11.992H.002v9.287h.002A2.726 2.726 0 0 0 2.73 24h9.275c6.626-.004 11.993-5.372 11.993-11.997C23.998 5.375 18.628 0 12 0zm2.431 4.94c2.015 0 3.917 1.543 3.917 3.671 0 .197.001.395-.03.619a1.002 1.002 0 0 1-1.137.893 1.002 1.002 0 0 1-.842-1.175 2.61 2.61 0 0 0 .013-.337c0-1.207-.987-1.672-1.92-1.672-.934 0-1.775.784-1.777 1.672.016 1.027 0 2.046 0 3.07l1.732-.012c1.352-.028 1.368 2.009.016 1.998l-1.748.013c-.004.826.006.677.002 1.093 0 0 .015 1.01-.016 1.776-.209 2.25-2.124 4.046-4.424 4.046-2.438 0-4.448-1.993-4.448-4.437.073-2.515 2.078-4.492 4.603-4.469l1.409-.01v1.996l-1.409.013h-.007c-1.388.04-2.577.984-2.6 2.47a2.438 2.438 0 0 0 2.452 2.439c1.356 0 2.441-.987 2.441-2.437l-.001-7.557c0-.14.005-.252.02-.407.23-1.848 1.883-3.256 3.754-3.256z"/>
+    </g>
+    <text x="80" y="28" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="30" fill="#c0caf5">~</text>
+    <circle cx="158" cy="17" r="9" fill="none" stroke="#8b8fa3" stroke-width="1.6"/>
+    <path d="M158 12 V17 L162 19" stroke="#8b8fa3" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="174" y="22" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="14" fill="#c0caf5">11:43</text>
+  </g>
+  <!-- New prompt below the reinitialized widget -->
+  <g class="prompt2">
+    <text x="60" y="1110" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="17">
+      <tspan fill="#9ece6a" font-weight="700">❯</tspan>
+    </text>
+    <clipPath id="cmdAClip">
+      <rect class="cmdA-clip" x="60" y="1095" width="0" height="25"/>
+    </clipPath>
+    <g clip-path="url(#cmdAClip)">
+      <text x="70" y="1110" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="17">
+        <tspan dx="10" fill="#c0caf5">echo "Welcome Visitor!!"</tspan>
+      </text>
+    </g>
+    <clipPath id="cmdBClip">
+      <rect class="cmdB-clip" x="60" y="1095" width="0" height="25"/>
+    </clipPath>
+    <g clip-path="url(#cmdBClip)">
+      <text x="70" y="1110" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="17">
+        <tspan dx="10" fill="#c0caf5">cat currently-building.txt</tspan>
+      </text>
+    </g>
+    <clipPath id="cmdCClip">
+      <rect class="cmdC-clip" x="60" y="1095" width="0" height="25"/>
+    </clipPath>
+    <g clip-path="url(#cmdCClip)">
+      <text x="70" y="1110" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="17">
+        <tspan dx="10" fill="#c0caf5">git checkout my-work👇🏻</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
