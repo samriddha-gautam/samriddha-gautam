@@ -12,3 +12,4 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/samriddha-gautam/samriddha-gautam/output/github-snake.svg">
   <img alt="Snake animation" src="https://raw.githubusercontent.com/samriddha-gautam/samriddha-gautam/output/github-snake-dark.svg" width="100%">
 </picture>
+   

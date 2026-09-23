@@ -118,59 +118,59 @@
   <!-- System info (fastfetch style) -->
   <g font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="19">
     <text x="430" y="165">
-      <tspan fill="#ffffff" font-weight="800">OS</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">OS</tspan>
       <tspan x="575" fill="#c0caf5">Fedora Linux x86_64</tspan>
     </text>
     <text x="430" y="189">
-      <tspan fill="#ffffff" font-weight="800">Host</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Host</tspan>
       <tspan x="575" fill="#c0caf5">Samriddha's Workstation</tspan>
     </text>
     <text x="430" y="213">
-      <tspan fill="#ffffff" font-weight="800">Kernel</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Kernel</tspan>
       <tspan x="575" fill="#c0caf5">Linux 7.2.6-200.fc44.x86_64</tspan>
     </text>
     <text x="430" y="237">
-      <tspan fill="#ffffff" font-weight="800">Uptime</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Uptime</tspan>
       <tspan x="575" fill="#c0caf5">4 years, on-the-grind since 2023</tspan>
     </text>
     <text x="430" y="261">
-      <tspan fill="#ffffff" font-weight="800">Packages</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Packages</tspan>
       <tspan x="575" fill="#c0caf5">React · NestJS · Expo </tspan>
     </text>
     <text x="430" y="285">
-      <tspan fill="#ffffff" font-weight="800">Shell</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Shell</tspan>
       <tspan x="575" fill="#c0caf5">zsh 5.9</tspan>
     </text>
     <text x="430" y="309">
-      <tspan fill="#ffffff" font-weight="800">WM</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">WM</tspan>
       <tspan x="575" fill="#c0caf5">niri 26.04</tspan>
     </text>
     <text x="430" y="333">
-      <tspan fill="#ffffff" font-weight="800">Terminal</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Terminal</tspan>
       <tspan x="575" fill="#c0caf5">ghostty</tspan>
     </text>
     <text x="430" y="357">
-      <tspan fill="#ffffff" font-weight="800">CPU</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">CPU</tspan>
       <tspan x="575" fill="#c0caf5">Developing &amp; Delivering</tspan>
     </text>
     <text x="430" y="381">
-      <tspan fill="#ffffff" font-weight="800">GPU</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">GPU</tspan>
       <tspan x="575" fill="#c0caf5">TypeScript </tspan>
     </text>
     <text x="430" y="405">
-      <tspan fill="#ffffff" font-weight="800">Memory</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Memory</tspan>
       <tspan x="575" fill="#c0caf5">Always allocating for a cup of coffee</tspan>
     </text>
     <text x="430" y="429">
-      <tspan fill="#ffffff" font-weight="800">Storage</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Storage</tspan>
       <tspan x="575" fill="#c0caf5">Brain full of thoughts</tspan>
     </text>
     <text x="430" y="453">
-      <tspan fill="#ffffff" font-weight="800">Locale</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Locale</tspan>
       <tspan x="575" fill="#c0caf5">ne_NP.UTF-8</tspan>
     </text>
     <text x="430" y="477">
-      <tspan fill="#ffffff" font-weight="800">Status</tspan>
+      <tspan fill="#ffffff" font-weight="800" textLength="130" lengthAdjust="spacingAndGlyphs">Status</tspan>
       <tspan x="575" fill="#c0caf5">On the grind</tspan>
     </text>
   </g>
@@ -227,47 +227,47 @@
   <g class="ls-reveal" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="17">
     <text x="70" y="642" fill="#8b8fa3">total 48</text>
     <text x="70" y="668">
-      <tspan fill="#7aa2f7" font-weight="700">drwxr-xr-x</tspan>
-      <tspan x="230" fill="#c0caf5">4.0K</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:43</tspan>
+      <tspan fill="#7aa2f7" font-weight="700" textLength="150" lengthAdjust="spacingAndGlyphs">drwxr-xr-x</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">4.0K</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:43</tspan>
       <tspan x="440" fill="#7aa2f7" font-weight="700">.</tspan>
     </text>
     <text x="70" y="694">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="230" fill="#c0caf5">14B</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">14B</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">pronouns</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">chill/guy</tspan>
     </text>
     <text x="70" y="720">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="230" fill="#c0caf5">10B</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">10B</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">location</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">NP🇳🇵</tspan>
     </text>
     <text x="70" y="746">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="230" fill="#c0caf5">21B</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">21B</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">role</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">Software Engineer</tspan>
     </text>
     <text x="70" y="772">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="230" fill="#c0caf5">23B</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">23B</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">status</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">open to work</tspan>
     </text>
     <text x="70" y="798">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="230" fill="#c0caf5">34B</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">34B</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">languages</tspan>
       <tspan fill="#565f89">=</tspan>
     </text>
@@ -281,49 +281,49 @@
       <text x="77" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#000000">PY</text>
     </g>
     <text x="106" y="850">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="266" fill="#c0caf5">28B</tspan>
-      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">28B</tspan>
+      <tspan x="336" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:36</tspan>
       <tspan x="476" fill="#bb9af7">frontend</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">React Native,React,NextJS</tspan>
     </text>
     <text x="106" y="900">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="266" fill="#c0caf5">14B</tspan>
-      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">14B</tspan>
+      <tspan x="336" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:36</tspan>
       <tspan x="476" fill="#bb9af7">backend</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">node,nest,go</tspan>
     </text>
     <text x="106" y="926">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="266" fill="#c0caf5">16B</tspan>
-      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">16B</tspan>
+      <tspan x="336" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:36</tspan>
       <tspan x="476" fill="#bb9af7">database</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">postgres,mongo,redis</tspan>
     </text>
     <text x="106" y="952">
-      <tspan fill="#c0caf5">-rw-r--r--</tspan>
-      <tspan x="266" fill="#c0caf5">17B</tspan>
-      <tspan x="336" fill="#c0caf5">Sep 23 11:36</tspan>
+      <tspan fill="#c0caf5" textLength="150" lengthAdjust="spacingAndGlyphs">-rw-r--r--</tspan>
+      <tspan x="266" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">17B</tspan>
+      <tspan x="336" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:36</tspan>
       <tspan x="476" fill="#bb9af7">tools</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">docker,git</tspan>
     </text>
     <text x="70" y="978">
-      <tspan fill="#9ece6a" font-weight="700">-rwxr-xr-x</tspan>
-      <tspan x="230" fill="#c0caf5">44B</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#9ece6a" font-weight="700" textLength="150" lengthAdjust="spacingAndGlyphs">-rwxr-xr-x</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">44B</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">focus</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">performant-web-ux.sh</tspan>
     </text>
     <text x="70" y="1004">
-      <tspan fill="#9ece6a" font-weight="700">-rwxr-xr-x</tspan>
-      <tspan x="230" fill="#c0caf5">1MB</tspan>
-      <tspan x="300" fill="#c0caf5">Sep 23 11:40</tspan>
+      <tspan fill="#9ece6a" font-weight="700" textLength="150" lengthAdjust="spacingAndGlyphs">-rwxr-xr-x</tspan>
+      <tspan x="230" fill="#c0caf5" textLength="55" lengthAdjust="spacingAndGlyphs">1MB</tspan>
+      <tspan x="300" fill="#c0caf5" textLength="125" lengthAdjust="spacingAndGlyphs">Sep 23 11:40</tspan>
       <tspan x="440" fill="#bb9af7">quote</tspan>
       <tspan fill="#565f89">=</tspan>
       <tspan fill="#9ece6a">dark theme is the only theme</tspan>
